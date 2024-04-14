@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comme:wght@100..900&family=Encode+Sans:wght@100..900&display=swap");
+.app-main-container {
+  min-height: 100vh;
+}
+
+.apply-font-color {
+  color: #e5dfd9;
+}
+
+.apply-black-background-color {
+  background-color: #0c0c0c;
+}
+
+.font-family-comme {
+  font-family: "Comme", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font-family-encode-sans {
+  font-family: "Encode Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.add-font-size {
+  font-size: 12px;
+  margin: auto;
+}
+
+.very-small-text {
+  font-size: 10px;
+  margin-left: 5px;
+  margin-top: 10px;
+}
+
+.apply-height-width-to-bag {
+  height: 40px;
+  width: 40px;
+}
+
+@media screen and (min-width: 568px) {
+  .add-font-size {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .negative-margin {
+    margin-top: -40px;
+  }
+  .add-margin-top {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2%;
+  }
+  .add-font-size {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .add-margin-top {
+    padding-left: 10%;
+  }
+  .add-font-size {
+    font-size: 18px;
+  }
+}
+
+.hover-link-color:hover {
+  color: white;
+}
+
+.each-bag-text {
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.apply-height-width-to-dot {
+  height: 4px;
+  width: 4px;
+  background-color: #e5dfd9;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.apply-display-property {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.negative-margin-left {
+  margin-left: -25px;
+  margin-top: 5px;
+}
+
+.apply-background-color-to-each-card {
+  background-color: #141414;
+}
+.apply-color-to-bookmark {
+  fill: #0c0c0c;
+}
+
+.quote-logo-margin {
+  margin-top: -10px;
+  margin-right: -25px;
+}
+
+.apply-shadow {
+  box-shadow: 1px 1px 1px rgb(234, 227, 227);
+  padding: 2px;
+}
+
+.quote-dummy-image {
+  height: 40px;
+  width: 40px;
+}
