@@ -7,20 +7,28 @@ import EachReview from "./EachReview";
 const Reviews = () => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
+
   useEffect(() => {
-    getData();
-  }, [page]);
-  const getData = async () => {
-    try {
-      const res = await axios(API_URL + "?page=" + page);
-      if (res.status === 200) {
-        setData(res?.data?.data);
+    const getData = async () => {
+      try {
+        const res = await axios(API_URL + "?page=" + page);
+        if (res.status === 200) {
+          setData(res?.data?.data);
+        }
+      } catch (error) {
+        const err = new Error(error.message);
+        console.log(err);
       }
-    } catch (error) {
-      const err = new Error(error.message);
-      console.log(err);
-    }
-  };
+    };
+
+    getData(); // Call getData inside the useEffect callback
+
+    return () => {
+      // Cleanup function
+      // This will run before the next effect runs
+      // You might not need a cleanup here, but it's a good practice to include it
+    };
+  }, [page]);
   return (
     <Container fluid className="mt-0 ms-2 me-2 pb-4">
       <Row>
